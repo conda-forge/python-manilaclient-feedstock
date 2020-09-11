@@ -1,18 +1,18 @@
 {% set name = "python-manilaclient" %}
-{% set version = "2.2.0" %}
+{% set version = "2.3.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 4dcb39577c745b8a173a73d83eae6f9b771bf87bdf1dba58e938dc564100431b
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 7b5b3215215a720ace08e53caca447a605dee9c8b3b3cfaa302b6bc7e63e4a28
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - manila = manilaclient.shell:main
 
@@ -48,7 +48,7 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: "Client library for OpenStack Manila API."
+  summary: Client library for OpenStack Manila API.
   doc_url: https://docs.openstack.org/python-manilaclient/latest/
   dev_url: https://opendev.org/openstack/python-manilaclient
 
