@@ -5,11 +5,13 @@ Home: https://docs.openstack.org/python-manilaclient/latest/
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-manilaclient-feedstock/blob/master/LICENSE.txt)
 
 Summary: Client library for OpenStack Manila API.
 
+Development: https://opendev.org/openstack/python-manilaclient
 
+Documentation: https://docs.openstack.org/python-manilaclient/latest/
 
 Current build status
 ====================
