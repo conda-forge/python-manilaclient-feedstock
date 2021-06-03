@@ -40,6 +40,7 @@ Installing `python-manilaclient` from the `conda-forge` channel can be achieved 
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `python-manilaclient` can be installed with:
