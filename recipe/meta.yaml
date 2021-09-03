@@ -32,7 +32,6 @@ requirements:
     - requests >=2.14.2
     - simplejson >=3.5.1
     - babel !=2.4.0,>=2.3.4
-    - six >=1.10.0
     - osc-lib >=1.10.0
     - python-keystoneclient >=3.8.0
     - debtcollector >=1.2.0
