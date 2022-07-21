@@ -1,5 +1,5 @@
 {% set name = "python-manilaclient" %}
-{% set version = "3.4.0" %}
+{% set version = "4.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 178d7f93b3498a0c05370dbde3ab23ddd6432831fe3e480e8e49a5f6ddcc82dc
+  sha256: 4c41b350d8184e46f656bbd6d84de5bab0fa3755dc2211f6b6398f96c27fe4c2
 
 build:
   number: 0
