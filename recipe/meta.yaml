@@ -10,7 +10,7 @@ source:
   sha256: 6e49c3d4c4c3492edee12914a9ffb26a3e7b3dd49fcc60f2dcdbfea624082e58
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -19,11 +19,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - pbr >=2.0.0
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - pbr !=2.1.0,>=2.0.0
     - oslo.config >=5.2.0
     - oslo.log >=3.36.0
@@ -38,6 +38,8 @@ requirements:
     - debtcollector >=1.2.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - manilaclient
   commands:
