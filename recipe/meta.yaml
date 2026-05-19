@@ -1,20 +1,18 @@
 {% set name = "python-manilaclient" %}
-{% set version = "5.7.1" %}
+{% set version = "6.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/18/de/2749f6509268abe3798d7c1248db9cfef3a40ae0a525b619c7b62c130aa6/python_manilaclient-{{ version }}.tar.gz
-  sha256: 05d154567bd25fbca2b474a53ff1b30f68f3bc5f2f87d078415550aea6305bd4
+  url: https://files.pythonhosted.org/packages/9b/14/c4a07dd2ab6563b75a2837e54dbf76536917891f06c975c78d83cd13dedd/python_manilaclient-{{ version }}.tar.gz
+  sha256: 5322a7e03c7b1a94471ca6d61e64302681a9edb3af954a51a73420f337a460e4
 
 build:
   number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  entry_points:
-    - manila = manilaclient.shell:main
 
 requirements:
   host:
@@ -42,8 +40,6 @@ test:
     - python {{ python_min }}
   imports:
     - manilaclient
-  commands:
-    - manila -h
 
 about:
   home: https://docs.openstack.org/python-manilaclient/latest/
