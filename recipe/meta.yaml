@@ -1,13 +1,13 @@
 {% set name = "python-manilaclient" %}
-{% set version = "6.2.0" %}
+{% set version = "6.3.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/27/aa/6236a377628ebfec4e7c02e6cbe7996a1ba4e026d880f9aae3e26991910f/python_manilaclient-{{ version }}.tar.gz
-  sha256: f92fd4e1130813e0dac0a825eb3ad7c374369e1bd1110740d05b4e3ea4d98f4b
+  url: https://files.pythonhosted.org/packages/35/dd/281e8a33f71ecadc3dec266c6797da8170c704edf17669bc2a69e8d12abf/python_manilaclient-{{ version }}.tar.gz
+  sha256: 92d73667a1ac20ab083588e8912b59769be0706f20fb6e9845ec06d3d72723d4
 
 build:
   number: 0
